@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ნაწილის მოთხოვნა | ნაწილები</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/autoparts-logo.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="მთავარი გვერდი">
+        <img src="images/autoparts-logo.svg" alt="AutoParts">
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <strong>მენიუ</strong>
+      </button>
+      <nav class="site-nav" id="mainNav" data-nav>
+        <a href="index.html">მთავარი</a>
+        <a href="catalog.html">კატალოგი</a>
+        <a href="request.html" aria-current="page">მოთხოვნა</a>
+        <a href="saved.html">შენახული</a>
+        <a href="sell.html">გაყიდვა</a>
+        <a href="service.html">სერვისები</a>
+        <a href="contact.html">კონტაქტი</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero request-hero">
+      <div class="container">
+        <p class="eyebrow">ნაწილის მოთხოვნა</p>
+        <h1>ვერ იპოვეთ საჭირო ნაწილი? გაგზავნეთ მოთხოვნა</h1>
+        <p>მომწოდებლები მიიღებენ მოთხოვნას და დაგიბრუნებენ შეთავაზებას.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <article class="form-intro">
+          <h2>ზუსტი ინფორმაცია ამცირებს ლოდინის დროს</h2>
+          <p>მიუთითეთ ავტომობილის მოდელი, წელი, დეტალის დასახელება და სასურველი მდგომარეობა.</p>
+          <ul class="check-list">
+            <li>ფასი რამდენიმე გამყიდველისგან</li>
+            <li>ადგილზე მიტანის შესაძლებლობა</li>
+            <li>ახალი და მეორადი ნაწილების შედარება</li>
+          </ul>
+        </article>
+
+        <form class="request-form js-form" id="partForm" action="#" method="post">
+          <fieldset>
+            <legend>საკონტაქტო მონაცემები</legend>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fullName">სახელი და გვარი</label>
+                <input id="fullName" type="text" name="saxeli" placeholder="თქვენი სახელი" required>
+              </div>
+              <div class="form-field">
+                <label for="phone">ტელეფონი</label>
+                <input id="phone" type="tel" name="telefoni" placeholder="+995 5XX XX XX XX" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>ავტომობილი და ნაწილი</legend>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="requestBrand">მარკა</label>
+                <select id="requestBrand" name="marka" data-brand-select required>
+                  <option value="">აირჩიეთ მარკა</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="requestModel">მოდელი</label>
+                <select id="requestModel" name="modeli" data-model-select required>
+                  <option value="">აირჩიეთ მოდელი</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="requestYear">გამოშვების წელი</label>
+                <select id="requestYear" name="weli" data-year-select required>
+                  <option value="">აირჩიეთ წელი</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="partName">ნაწილის დასახელება</label>
+                <input id="partName" type="text" name="nawili" placeholder="მაგალითად: მარცხენა ფარი" required>
+              </div>
+              <div class="form-field">
+                <label for="condition">მდგომარეობა</label>
+                <select id="condition" name="mdgomareoba" required>
+                  <option value="">აირჩიეთ</option>
+                  <option value="ახალი">ახალი</option>
+                  <option value="მეორადი">მეორადი</option>
+                  <option value="ორივე">ორივე მისაღებია</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="partNote">დამატებითი აღწერა</label>
+              <textarea id="partNote" name="agwera" placeholder="ფერი, მხარე, კოდი ან სხვა მნიშვნელოვანი დეტალი" maxlength="500"></textarea>
+              <span class="counter" id="noteCounter">0/500</span>
+            </div>
+          </fieldset>
+
+          <label class="agree-row" for="agree">
+            <input id="agree" type="checkbox" name="tanxmoba" required>
+            <span>ვეთანხმები, რომ მომწოდებელი დამიკავშირდეს მითითებულ ნომერზე.</span>
+          </label>
+
+          <button class="btn btn-primary" type="submit">მოთხოვნის გაგზავნა</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="quick-call" href="tel:+995321234567" aria-label="დარეკვა">☎</a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="images/autoparts-logo.svg" alt="AutoParts">
+        </a>
+        <p>ავტონაწილების ძიება, მოთხოვნა და შედარება ქართულად.</p>
+      </div>
+      <p class="copyright">2026 ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
