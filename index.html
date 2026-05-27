@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ნაწილები | ავტონაწილების პლატფორმა</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/autoparts-logo.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="მთავარი გვერდი">
+        <img src="images/autoparts-logo.svg" alt="AutoParts">
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <strong>მენიუ</strong>
+      </button>
+      <nav class="site-nav" id="mainNav" data-nav>
+        <a href="index.html" aria-current="page">მთავარი</a>
+        <a href="catalog.html">კატალოგი</a>
+        <a href="request.html">მოთხოვნა</a>
+        <a href="saved.html">შენახული</a>
+        <a href="sell.html">გაყიდვა</a>
+        <a href="service.html">სერვისები</a>
+        <a href="contact.html">კონტაქტი</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-home">
+      <div class="container hero-content">
+        <p class="eyebrow">სანდო ავტონაწილები საქართველოში</p>
+        <h1>იპოვეთ საჭირო ნაწილი სწრაფად და შეადარეთ შეთავაზებები ერთ სივრცეში</h1>
+        <p>ძარის, სავალი ნაწილის, ელექტრობისა და ძრავის დეტალები დამოწმებული გამყიდველებისგან.</p>
+        <form class="hero-search search-panel" action="catalog.html" method="get">
+          <label for="heroSearch">ნაწილის ან ავტომობილის ძიება</label>
+          <div class="search-grid">
+            <select id="heroBrand" name="marka" data-brand-select aria-label="მარკა">
+              <option value="">ყველა მარკა</option>
+            </select>
+            <select id="heroModel" name="modeli" data-model-select aria-label="მოდელი">
+              <option value="">ყველა მოდელი</option>
+            </select>
+            <select id="heroYear" name="weli" data-year-select aria-label="წელი">
+              <option value="">ყველა წელი</option>
+            </select>
+            <input id="heroSearch" type="search" name="dzebna" placeholder="მაგალითად: ფარი, ბამპერი, ქამრი">
+            <button class="btn btn-primary" type="submit">ძებნა</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container stats-grid">
+        <article class="stat-card">
+          <strong>18 400+</strong>
+          <span>განთავსებული ნაწილი</span>
+        </article>
+        <article class="stat-card">
+          <strong>420+</strong>
+          <span>დამოწმებული გამყიდველი</span>
+        </article>
+        <article class="stat-card">
+          <strong>24 სთ</strong>
+          <span>მოთხოვნაზე პასუხი</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">პოპულარული კატეგორიები</p>
+          <h2>ყველაზე მოთხოვნადი ნაწილები</h2>
+        </div>
+        <div class="category-grid">
+          <a class="category-tile" href="catalog.html">
+            <span class="tile-icon">ძ</span>
+            <h3>ძარა</h3>
+            <p>ბამპერი, კარი, კაპოტი, სარკე</p>
+          </a>
+          <a class="category-tile" href="catalog.html">
+            <span class="tile-icon">ს</span>
+            <h3>სავალი ნაწილი</h3>
+            <p>ამორტიზატორი, ბერკეტი, საკისარი</p>
+          </a>
+          <a class="category-tile" href="catalog.html">
+            <span class="tile-icon">ე</span>
+            <h3>ელექტრობა</h3>
+            <p>ფარი, გენერატორი, სენსორი</p>
+          </a>
+          <a class="category-tile" href="catalog.html">
+            <span class="tile-icon">ძრ</span>
+            <h3>ძრავი</h3>
+            <p>ფილტრი, ტუმბო, რადიატორი</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container feature-grid">
+        <article class="feature-copy">
+          <p class="eyebrow">როგორ მუშაობს</p>
+          <h2>მარტივი გზა სწორი ნაწილის მისაღებად</h2>
+          <p>აირჩიეთ კატეგორია, შეადარეთ ფასი და მდგომარეობა, შემდეგ დაუკავშირდით გამყიდველს ან შეავსეთ მოთხოვნა.</p>
+          <a class="btn btn-secondary" href="request.html">ნაწილის მოთხოვნა</a>
+        </article>
+        <figure class="feature-media">
+          <img src="https://images.pexels.com/photos/8470688/pexels-photo-8470688.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="ხელოსანი ავტომობილის ძრავთან">
+          <figcaption>ადგილზე შემოწმება და შეთანხმებული მიწოდება</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container cta-band">
+        <div>
+          <p class="eyebrow">მომწოდებლებისთვის</p>
+          <h2>განათავსეთ მარაგი და მიიღეთ მოთხოვნები</h2>
+        </div>
+        <a class="btn btn-light" href="sell.html">ნაწილის დამატება</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="quick-call" href="tel:+995321234567" aria-label="დარეკვა">☎</a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="images/autoparts-logo.svg" alt="AutoParts">
+        </a>
+        <p>ავტონაწილების ძიება, მოთხოვნა და შედარება ქართულად.</p>
+      </div>
+      <p class="copyright">2026 ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

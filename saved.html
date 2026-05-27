@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>შენახული | ნაწილები</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/autoparts-logo.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="მთავარი გვერდი">
+        <img src="images/autoparts-logo.svg" alt="AutoParts">
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <strong>მენიუ</strong>
+      </button>
+      <nav class="site-nav" id="mainNav" data-nav>
+        <a href="index.html">მთავარი</a>
+        <a href="catalog.html">კატალოგი</a>
+        <a href="request.html">მოთხოვნა</a>
+        <a href="saved.html" aria-current="page">შენახული</a>
+        <a href="sell.html">გაყიდვა</a>
+        <a href="service.html">სერვისები</a>
+        <a href="contact.html">კონტაქტი</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero saved-hero">
+      <div class="container">
+        <p class="eyebrow">შენახული</p>
+        <h1>შენახული ნაწილები სწრაფი დაბრუნებისთვის</h1>
+        <p>აქ ჩანს ის შეთავაზებები, რომლებიც მოგვიანებით შედარებისთვის შეინახეთ.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="catalog-toolbar">
+          <h2>ჩემი შენახული ნაწილები</h2>
+          <a class="btn btn-secondary" href="catalog.html">კატალოგში დაბრუნება</a>
+        </div>
+
+        <div class="saved-list" data-saved-list>
+          <article class="saved-card" data-saved-card>
+            <div>
+              <h3>Toyota Camry წინა ბამპერი</h3>
+              <p>თბილისი, ორიგინალი ნაწილი</p>
+            </div>
+            <strong>420 ₾</strong>
+            <a class="btn btn-card" href="part.html?item=toyota-camry-front-bumper">ნახვა</a>
+            <button class="btn btn-secondary" type="button" data-remove-saved>წაშლა</button>
+          </article>
+          <article class="saved-card" data-saved-card>
+            <div>
+              <h3>Honda Fit მარცხენა ფარი</h3>
+              <p>რუსთავი, შემოწმებული მდგომარეობა</p>
+            </div>
+            <strong>260 ₾</strong>
+            <a class="btn btn-card" href="part.html?item=honda-fit-left-headlight">ნახვა</a>
+            <button class="btn btn-secondary" type="button" data-remove-saved>წაშლა</button>
+          </article>
+        </div>
+
+        <p class="empty-state" data-saved-empty>შენახული ნაწილები ჯერ არ გაქვთ.</p>
+      </div>
+    </section>
+  </main>
+
+  <a class="quick-call" href="tel:+995321234567" aria-label="დარეკვა">☎</a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="images/autoparts-logo.svg" alt="AutoParts">
+        </a>
+        <p>ავтონაწილების ძიება, მოთხოვნა და შედარება ქართულად.</p>
+      </div>
+      <p class="copyright">2026 ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

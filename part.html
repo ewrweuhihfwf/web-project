@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ნაწილის გვერდი | ნაწილები</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/autoparts-logo.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="მთავარი გვერდი">
+        <img src="images/autoparts-logo.svg" alt="AutoParts">
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <strong>მენიუ</strong>
+      </button>
+      <nav class="site-nav" id="mainNav" data-nav>
+        <a href="index.html">მთავარი</a>
+        <a href="catalog.html">კატალოგი</a>
+        <a href="request.html">მოთხოვნა</a>
+        <a href="saved.html">შენახული</a>
+        <a href="sell.html">გაყიდვა</a>
+        <a href="service.html">სერვისები</a>
+        <a href="contact.html">კონტაქტი</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero detail-hero">
+      <div class="container">
+        <p class="eyebrow">ნაწილის გვერდი</p>
+        <h1>ზუსტი ინფორმაცია და შეკვეთა</h1>
+        <p>იხილეთ ნაწილი სრულ აღწერასთან ერთად და გააგზავნეთ შეკვეთა ერთ ღილაკზე.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container part-page feature-grid">
+        <figure class="part-page-media">
+          <img id="partImage" src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="ნაწილის ფოტო">
+        </figure>
+
+        <article class="part-page-content">
+          <p class="eyebrow" id="partCategory">კატეგორია</p>
+          <h2 class="part-page-title" id="partTitle">Toyota Camry წინა ბამპერი</h2>
+          <p class="part-page-description" id="partDescription">2018-2023 წელი, თეთრი ფერი, მცირე ნაკაწრით.</p>
+          <div class="part-page-specs">
+            <div>
+              <span>ქალაქი</span>
+              <strong id="partCity">თბილისი</strong>
+            </div>
+            <div>
+              <span>მოდელი</span>
+              <strong id="partModel">Camry</strong>
+            </div>
+            <div>
+              <span>წლები</span>
+              <strong id="partYears">2018-2023</strong>
+            </div>
+            <div>
+              <span>მდგომარეობა</span>
+              <strong id="partCondition">კარგი</strong>
+            </div>
+          </div>
+          <p class="part-page-price" id="partPrice">420 ₾</p>
+          <div class="part-page-actions">
+            <a class="btn btn-primary" id="orderBtn" href="request.html">შეკვეთა</a>
+            <a class="btn btn-secondary" href="catalog.html">კატალოგში დაბრუნება</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <a class="quick-call" href="tel:+995321234567" aria-label="დარეკვა">☎</a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="images/autoparts-logo.svg" alt="AutoParts">
+        </a>
+        <p>ავტონაწილების ძიება, მოთხოვნა და შედარება ქართულად.</p>
+      </div>
+      <p class="copyright">2026 ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
