@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>კონტაქტი | ნაწილები</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/autoparts-logo.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="მთავარი გვერდი">
+        <img src="images/autoparts-logo.svg" alt="AutoParts">
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <strong>მენიუ</strong>
+      </button>
+      <nav class="site-nav" id="mainNav" data-nav>
+        <a href="index.html">მთავარი</a>
+        <a href="catalog.html">კატალოგი</a>
+        <a href="request.html">მოთხოვნა</a>
+        <a href="saved.html">შენახული</a>
+        <a href="sell.html">გაყიდვა</a>
+        <a href="service.html">სერვისები</a>
+        <a href="contact.html" aria-current="page">კონტაქტი</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <div class="container">
+        <p class="eyebrow">კონტაქტი</p>
+        <h1>დაგვიკავშირდით ავტონაწილების საკითხზე</h1>
+        <p>მოგვწერეთ შეკითხვა ან დაგვირეკეთ სამუშაო საათებში.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <article class="contact-card">
+          <h2>საკონტაქტო ინფორმაცია</h2>
+          <address>
+            თბილისი, test street 12<br>
+            ტელეფონი: +995 32 123 45 67<br>
+            ფოსტა: info@test.ge
+          </address>
+          <p>სამუშაო დრო: ყოველდღე 10:00 - 19:00</p>
+          <div class="map-card" aria-label="მისამართის ვიზუალური ბლოკი">
+            <span>თბილისი</span>
+          </div>
+        </article>
+
+        <form class="request-form js-form" id="contactForm" action="#" method="post">
+          <fieldset>
+            <legend>შეტყობინების გაგზავნა</legend>
+            <div class="form-field">
+              <label for="contactName">სახელი</label>
+              <input id="contactName" type="text" name="saxeli" placeholder="თქვენი სახელი" required>
+            </div>
+            <div class="form-field">
+              <label for="contactEmail">ელფოსტა</label>
+              <input id="contactEmail" type="email" name="elfosta" placeholder="თქვენი ელფოსტა" required>
+            </div>
+            <div class="form-field">
+              <label for="contactMessage">შეტყობინება</label>
+              <textarea id="contactMessage" name="shetyobineba" placeholder="დაწერეთ შეკითხვა" required></textarea>
+            </div>
+          </fieldset>
+          <button class="btn btn-primary" type="submit">გაგზავნა</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="quick-call" href="tel:+995321234567" aria-label="დარეკვა">☎</a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="images/autoparts-logo.svg" alt="AutoParts">
+        </a>
+        <p>ავტონაწილების ძიება, მოთხოვნა და შედარება ქართულად.</p>
+      </div>
+      <p class="copyright">2026 ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
