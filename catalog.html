@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>კატალოგი | ნაწილები</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/autoparts-logo.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="მთავარი გვერდი">
+        <img src="images/autoparts-logo.svg" alt="AutoParts">
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <strong>მენიუ</strong>
+      </button>
+      <nav class="site-nav" id="mainNav" data-nav>
+        <a href="index.html">მთავარი</a>
+        <a href="catalog.html" aria-current="page">კატალოგი</a>
+        <a href="request.html">მოთხოვნა</a>
+        <a href="saved.html">შენახული</a>
+        <a href="sell.html">გაყიდვა</a>
+        <a href="service.html">სერვისები</a>
+        <a href="contact.html">კონტაქტი</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero catalog-hero">
+      <div class="container">
+        <p class="eyebrow">კატალოგი</p>
+        <h1>ავტონაწილები კატეგორიების მიხედვით</h1>
+        <p>გაფილტრეთ ნაწილები მარკით, მოდელით, წლით, კატეგორიით და ფასით.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container catalog-layout">
+        <aside class="filter-panel" aria-label="ფილტრები">
+          <h2>ფილტრი</h2>
+          <label for="partSearch">ძიება</label>
+          <input id="partSearch" type="search" name="dzebna" placeholder="ნაწილი ან ავტომობილი">
+
+          <label for="filterBrand">მარკა</label>
+          <select id="filterBrand" name="marka" data-brand-select>
+            <option value="">ყველა მარკა</option>
+          </select>
+
+          <label for="filterModel">მოდელი</label>
+          <select id="filterModel" name="modeli" data-model-select>
+            <option value="">ყველა მოდელი</option>
+          </select>
+
+          <label for="filterYear">წელი</label>
+          <select id="filterYear" name="weli" data-year-select>
+            <option value="">ყველა წელი</option>
+          </select>
+
+          <fieldset class="filter-group">
+            <legend>კატეგორია</legend>
+            <button class="filter-chip active" type="button" data-filter="ყველა" aria-pressed="true">ყველა</button>
+            <button class="filter-chip" type="button" data-filter="ძარა" aria-pressed="false">ძარა</button>
+            <button class="filter-chip" type="button" data-filter="განათება" aria-pressed="false">განათება</button>
+            <button class="filter-chip" type="button" data-filter="სავალი" aria-pressed="false">სავალი</button>
+            <button class="filter-chip" type="button" data-filter="ძრავი" aria-pressed="false">ძრავი</button>
+            <button class="filter-chip" type="button" data-filter="ელექტრობა" aria-pressed="false">ელექტრობა</button>
+          </fieldset>
+
+          <label for="sortParts">დალაგება</label>
+          <select id="sortParts" name="dalageba">
+            <option value="default">რეკომენდებული</option>
+            <option value="cheap">იაფიდან ძვირისკენ</option>
+            <option value="expensive">ძვირიდან იაფისკენ</option>
+          </select>
+        </aside>
+
+        <div class="catalog-content">
+          <div class="catalog-toolbar">
+            <h2>ხელმისაწვდომი ნაწილები</h2>
+            <p id="resultCount">ნაპოვნია 8 ნაწილი</p>
+          </div>
+          <div class="parts-grid" id="partsGrid">
+            <article class="part-card" data-category="ძარა" data-name="Toyota Camry წინა ბამპერი" data-brand="Toyota" data-model="Camry" data-year-min="2018" data-year-max="2023" data-price="420">
+              <div class="part-image">
+                <img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=900" alt="წინა ბამპერის ფოტო">
+                <span class="badge">მეორადი</span>
+              </div>
+              <div class="part-body">
+                <h3>Toyota Camry წინა ბამპერი</h3>
+                <p>2018-2023 წელი, თეთრი ფერი, მცირე ნაკაწრით.</p>
+                <div class="part-meta">
+                  <span>თბილისი</span>
+                  <strong>420 ₾</strong>
+                </div>
+                <div class="part-actions">
+                  <a class="btn btn-card" href="part.html?item=toyota-camry-front-bumper">ნახვა</a>
+                  <button class="btn btn-secondary" type="button" data-save-part>შენახვა</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="part-card" data-category="განათება" data-name="Honda Fit მარცხენა ფარი" data-brand="Honda" data-model="Fit" data-year-min="2014" data-year-max="2020" data-price="260">
+              <div class="part-image">
+                <img src="https://images.pexels.com/photos/97079/pexels-photo-97079.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ავტომობილის ფარის ფოტო">
+                <span class="badge">მეორადი</span>
+              </div>
+              <div class="part-body">
+                <h3>Honda Fit მარცხენა ფარი</h3>
+                <p>2014-2020 წელი, სუფთა მინა, სამაგრები ადგილზეა.</p>
+                <div class="part-meta">
+                  <span>რუსთავი</span>
+                  <strong>260 ₾</strong>
+                </div>
+                <div class="part-actions">
+                  <a class="btn btn-card" href="part.html?item=honda-fit-left-headlight">ნახვა</a>
+                  <button class="btn btn-secondary" type="button" data-save-part>შენახვა</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="part-card" data-category="სავალი" data-name="Mercedes-Benz E-Class წინა ამორტიზატორი" data-brand="Mercedes-Benz" data-model="E-Class" data-year-min="2009" data-year-max="2016" data-price="180">
+              <div class="part-image">
+                <img src="https://images.pexels.com/photos/6870299/pexels-photo-6870299.jpeg?auto=compress&cs=tinysrgb&w=900" alt="სავალი ნაწილის ფოტო">
+                <span class="badge">აღდგენილი</span>
+              </div>
+              <div class="part-body">
+                <h3>Mercedes-Benz E-Class წინა ამორტიზატორი</h3>
+                <p>მდგრადი მდგომარეობა, მოხსნილია მუშა ავტომობილიდან.</p>
+                <div class="part-meta">
+                  <span>ქუთაისი</span>
+                  <strong>180 ₾</strong>
+                </div>
+                <div class="part-actions">
+                  <a class="btn btn-card" href="part.html?item=mercedes-eclass-front-shock">ნახვა</a>
+                  <button class="btn btn-secondary" type="button" data-save-part>შენახვა</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="part-card" data-category="ძრავი" data-name="Hyundai Sonata ზეთის ფილტრი" data-brand="Hyundai" data-model="Sonata" data-year-min="2015" data-year-max="2019" data-price="35">
+              <div class="part-image">
+                <img src="https://images.pexels.com/photos/20867316/pexels-photo-20867316.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ძრავის ნაწილის ფოტო">
+                <span class="badge">ახალი</span>
+              </div>
+              <div class="part-body">
+                <h3>Hyundai Sonata ზეთის ფილტრი</h3>
+                <p>შეფუთული დეტალი, თავსებადია 2015-2019 წლებთან.</p>
+                <div class="part-meta">
+                  <span>ბათუმი</span>
+                  <strong>35 ₾</strong>
+                </div>
+                <div class="part-actions">
+                  <a class="btn btn-card" href="part.html?item=hyundai-sonata-oil-filter">ნახვა</a>
+                  <button class="btn btn-secondary" type="button" data-save-part>შენახვა</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="part-card" data-category="სავალი" data-name="Kia Sportage სამუხრუჭე ხუნდები" data-brand="Kia" data-model="Sportage" data-year-min="2016" data-year-max="2022" data-price="95">
+              <div class="part-image">
+                <img src="https://images.pexels.com/photos/4022543/pexels-photo-4022543.jpeg?auto=compress&cs=tinysrgb&w=900" alt="სამუხრუჭე სისტემის ფოტო">
+                <span class="badge">ახალი</span>
+              </div>
+              <div class="part-body">
+                <h3>Kia Sportage სამუხრუჭე ხუნდები</h3>
+                <p>წინა მხარე, სრული კომპლექტი, გარანტიით.</p>
+                <div class="part-meta">
+                  <span>თბილისი</span>
+                  <strong>95 ₾</strong>
+                </div>
+                <div class="part-actions">
+                  <a class="btn btn-card" href="part.html?item=kia-sportage-brake-pads">ნახვა</a>
+                  <button class="btn btn-secondary" type="button" data-save-part>შენახვა</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="part-card" data-category="ელექტრობა" data-name="BMW 3 Series გენერატორი" data-brand="BMW" data-model="3 Series" data-year-min="2012" data-year-max="2018" data-price="390">
+              <div class="part-image">
+                <img src="https://images.pexels.com/photos/16143352/pexels-photo-16143352.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ძრავის ელექტრო ნაწილის ფოტო">
+                <span class="badge">აღდგენილი</span>
+              </div>
+              <div class="part-body">
+                <h3>BMW 3 Series გენერატორი</h3>
+                <p>შემოწმებული სტენდზე, ხელმისაწვდომია ადგილზე მიტანა.</p>
+                <div class="part-meta">
+                  <span>გორი</span>
+                  <strong>390 ₾</strong>
+                </div>
+                <div class="part-actions">
+                  <a class="btn btn-card" href="part.html?item=bmw-3series-alternator">ნახვა</a>
+                  <button class="btn btn-secondary" type="button" data-save-part>შენახვა</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="part-card" data-category="ძრავი" data-name="Ford Transit EGR სარქველი" data-brand="Ford" data-model="Transit" data-year-min="2013" data-year-max="2020" data-price="210">
+              <div class="part-image">
+                <img src="https://images.pexels.com/photos/12330254/pexels-photo-12330254.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ძრავის EGR სარქველის ფოტო">
+                <span class="badge">მეორადი</span>
+              </div>
+              <div class="part-body">
+                <h3>Ford Transit EGR სარქველი</h3>
+                <p>ორიგინალი მოხსნილი დეტალი, გაწმენდილი და ტესტირებული დიაგნოსტიკურ სტენდზე.</p>
+                <div class="part-meta">
+                  <span>ზუგდიდი</span>
+                  <strong>210 ₾</strong>
+                </div>
+                <div class="part-actions">
+                  <a class="btn btn-card" href="part.html?item=ford-transit-egr-valve">ნახვა</a>
+                  <button class="btn btn-secondary" type="button" data-save-part>შენახვა</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="part-card" data-category="ძარა" data-name="Volkswagen Passat B8 მარჯვენა სარკე" data-brand="Volkswagen" data-model="Passat" data-year-min="2015" data-year-max="2021" data-price="320">
+              <div class="part-image">
+                <img src="https://images.pexels.com/photos/9101149/pexels-photo-9101149.jpeg?auto=compress&cs=tinysrgb&w=900" alt="მარჯვენა სარკის ფოტო">
+                <span class="badge">მეორადი</span>
+              </div>
+              <div class="part-body">
+                <h3>Volkswagen Passat B8 მარჯვენა სარკე</h3>
+                <p>კორპუსი დაუზიანებელია, მექანიზმი სრულად მუშაა, აქვს გათბობის ფუნქცია.</p>
+                <div class="part-meta">
+                  <span>თბილისი</span>
+                  <strong>320 ₾</strong>
+                </div>
+                <div class="part-actions">
+                  <a class="btn btn-card" href="part.html?item=volkswagen-passat-right-mirror">ნახვა</a>
+                  <button class="btn btn-secondary" type="button" data-save-part>შენახვა</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="empty-state" id="emptyState">ამ ფილტრებით ნაწილი ვერ მოიძებნა.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="quick-call" href="tel:+995321234567" aria-label="დარეკვა">☎</a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="images/autoparts-logo.svg" alt="AutoParts">
+        </a>
+        <p>ავტონაწილების ძიება, მოთხოვნა და შედარება ქართულად.</p>
+      </div>
+      <p class="copyright">2026 ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
